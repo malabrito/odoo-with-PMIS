@@ -1,0 +1,181 @@
+90  su postgres
+91  sudo /etc/init.d/odoo-server stop
+92  cat /var/log/odoo/odoo-server.log
+93  sudo /etc/init.d/odoo-server start
+94  nano  /etc/odoo-server.conf
+95  sudo /etc/init.d/odoo-server stop
+96  nano  ~/.openerp_serverrc
+97  sudo /etc/init.d/odoo-server start
+98  ps aux | grep odoo
+99  exit
+100  su odoo
+101  su - odoo
+102  sudo su - odoo -s /bin/bash
+103  sudo /etc/init.d/odoo-server start
+104  cat /var/log/odoo/odoo-server.log
+105  nano  /etc/odoo-server.conf
+106  sudo /etc/init.d/odoo-server start
+107  cat /var/log/odoo/odoo-server.log
+108  sudo /etc/init.d/odoo-server stop
+109  sudo -u postgres psql postgres
+110  sudo /etc/init.d/odoo-server start
+111  cat /var/log/odoo/odoo-server.log
+112  ls
+113  pwd
+
+mkdir /opt/odoo/modules/pmis
+cd /opt/odoo/modules/pmis
+git clone https://github.com/projectexpert/pmis.git
+cd ..
+sudo pip install num2words
+
+mkdir /opt/odoo/modules/oca
+cd /opt/odoo/modules/oca
+git clone -b 8.0 https://github.com/OCA/purchase-workflow.git
+
+
+121  cat /var/log/odoo/odoo-server.log
+122  sudo /etc/init.d/odoo-server stop
+123  nano  /etc/odoo-server.conf
+124  sudo /etc/init.d/odoo-server start
+125  cat /var/log/odoo/odoo-server.log
+126  cd pmis
+127  ls
+128  cd pmis
+129  ls
+130  sudo /etc/init.d/odoo-server stop
+131  nano  /etc/odoo-server.conf
+132  sudo /etc/init.d/odoo-server start
+133  cat /var/log/odoo/odoo-server.log
+134  cd ..
+135  ls
+136  ls -l
+137  cd open erp
+138  ls
+139  ls -l
+140  ls -l openerp
+141  ls -l openerp/addons
+142  sudo /etc/init.d/odoo-server stop
+143  cd ~/
+144  pwd
+145  sudo apt-get install virtualenv
+146  sudo pip
+147  sudo pip install virtualenv
+148  sudo apt-get install python-virtualenv
+149  sudo easy_install pip
+150  virtualenv --verstion
+151  virtualenv --version
+152  export PIP_FIND_LINKS="https://wheelhouse.odoo-community.org/oca"
+153  pip install --upgrade pip
+154  pip install odoo-autodiscover
+155  exit
+156  sudo /etc/init.d/odoo-server start
+157  cat /var/log/odoo/odoo-server.log
+158  cd /opt/odoo
+159  ls
+# 160  mkdir oca
+# 161  git clone https://github.com/OCA/purchase-workflow#8.0 oca
+# 162  git clone -b 8.0 https://github.com/OCA/purchase-workflow.git oca
+# 163  ls -l oca
+# 164  rn
+# 165  rename
+# 166  rename oca purchase-workflow
+# 167  mv oca purchase-workflow
+# 168  mkdir oca
+# 169  mv purchase-workflow oca/purchase-workflow
+# 170  ls oca
+# 171  ls -l
+# 172  nano sudo nano /etc/odoo-server.conf
+# 173  fg
+174  sudo nano /etc/odoo-server.conf
+175  sudo /etc/init.d/odoo-server start
+176  sudo /etc/init.d/odoo-server stop
+177  sudo nano /etc/odoo-server.conf
+178  ls -l oca
+179  ls -l oca/purchase_workflow
+180  ls -l oca/purchase_workflow/
+181  rm oca/purchase_workflow/
+182  rm oca/purchase_workflow
+183  rm -rn oca/purchase_workflow
+184  rm -r oca/purchase_workflow
+185  cd oca
+186  ls -la
+187  cd purchase-workflow
+188  ls -la
+189  sudo nano /etc/odoo-server.conf
+190  sudo /etc/init.d/odoo-server start
+191  sudo /etc/init.d/odoo-server stop
+192  kill -9 4096
+193  ps aux
+194  kill -9 21508
+195  ps aux
+196  sudo /etc/init.d/odoo-server start
+197  cat /var/log/odoo/odoo-server.log
+198  sudo /etc/init.d/odoo-server stop
+199  ps aux
+200  sudo nano /etc/odoo-server.conf
+201  sudo /etc/init.d/odoo-server start
+202  cat /var/log/odoo/odoo-server.log
+203  cd ..
+204  mkdir extra
+205  cd extra
+206  wget https://apps.odoo.com/loempia/download/gantt_improvement/8.0.2.0/mg1m2nok5BsiErHKACeYs.zip?deps
+207  ls -l
+208  unzip mg1m2nok5BsiErHKACeYs.zip?deps
+209  ls
+210  wgt https://apps.odoo.com/loempia/download/profile_pmis/8.0.1.1.5/2ybNs6Swla8LVenoMTmcGt.zip
+211  wget https://apps.odoo.com/loempia/download/profile_pmis/8.0.1.1.5/2ybNs6Swla8LVenoMTmcGt.zip
+212  uzip 2ybNs6Swla8LVenoMTmcGt.zip
+213  unzip 2ybNs6Swla8LVenoMTmcGt.zip
+214  ls -la
+215  cd profile_pmis
+216  ./__openerp__.py
+217  sudo ./__openerp__.py
+218  sudo python __openerp__.py
+219  sudo python __init__.py
+220  sudo nano /etc/odoo-server.conf
+221  sudo /etc/init.d/odoo-server stop
+222  sudo /etc/init.d/odoo-server start
+223  ps aux
+224  cat /var/log/odoo/odoo-server.log
+225  ls -la
+226  nano __openerp__.py
+227  sudo /etc/init.d/odoo-server stop
+228  sudo python ./__openerp__.py
+229  sudo /etc/init.d/odoo-server start
+230  cd ..
+231  cd pmis
+232  cd __openerp__.py
+233  cd profile_pmis
+234  ls -la
+235  cd pmis
+236  sudo nano /etc/odoo-server.conf
+237  cd profile_pmis
+238  ls
+239  cat README.rst
+240  cd __openerp__.py
+241  nano __openerp__.py
+242  sudo pyhton __openerp__.py
+243  sudo python __openerp__.py
+244  cd __init__.py
+245  sudo pyhton __init__.py
+246  sudo python __init__.py
+247  sudo /etc/init.d/odoo-server start
+248  sudo nano /etc/odoo-server.conf
+249  cd ..
+250  ls -la
+251  cd openerp
+252  ls -a
+253  ls -la
+254  ls -la addons
+255  ls -la addons/base
+256  ls -la addons/base/ir
+257  ls -la
+258  ls -la modules
+259  ls -la /usr/lib/python2.7/dist-package
+260  ls -la /usr/lib/python2.7
+261  ls -la /usr/lib/python2.7/dist-packages
+262  ls -la /usr/lib/python2.7/dist-packages/openerp
+263  cd ..
+264  ls -la addons
+265  ls
