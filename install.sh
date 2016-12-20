@@ -8,11 +8,9 @@ createuser --createdb --username postgres --no-createrole --no-superuser --pwpro
 exit
 
 echo "installing dependencies"
-sudo apt-get install autocomplete nano git -y
 sudo apt-get install python-dev python-yaml python-feedparser python-geoip python-imaging python-pybabel python-unicodecsv wkhtmltopdf libxml2-dev libxmlsec1-dev python-argparse python-babel python-cups python-dateutil python-decorator python-docutils python-feedparser python-gdata python-gevent python-greenlet python-jinja2 python-libxslt1 python-lxml python-mako python-markupsafe python-mock python-openid python-passlib python-psutil python-psycopg2 python-pychart python-pydot python-pyparsing python-pypdf python-ldap python-yaml python-reportlab python-requests python-simplejson python-six python-tz python-unittest2 python-vatnumber python-vobject python-webdav python-werkzeug python-wsgiref python-xlwt python-zsi python-dev libpq-dev poppler-utils python-pdftools antiword -y
 sudo apt-get install python-pip -y
 sudo apt-get install python-setuptools -y
-sudo pip install pyserial==2.7 -y
 sudo pip install pyserial==2.7
 sudo pip install psycogreen==1.0
 sudo pip install pyusb==1.0.0b1
