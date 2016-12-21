@@ -1,4 +1,4 @@
-sudo apt-get install openssh-server nano git -y
+sudo apt-get install openssh-server nano git bash-completion -y
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
 export LANGUAGE=pt_BR.UTF-8
