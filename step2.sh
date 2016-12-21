@@ -27,31 +27,28 @@ sudo cp /usr/local/bin/wkhtmltopdf /usr/bin
 sudo cp /usr/local/bin/wkhtmltoimage /usr/bin
 wkhtmltopdf --version
 
-echo "downloading odoo"
-sudo su - odoo -s /bin/bash
-git clone https://www.github.com/odoo/odoo --depth 1 --branch 8.0 --single-branch .
-exit
+
 echo "configuring odoo"
-sudo cp /opt/odoo/debian/openerp-server.conf /etc/odoo-server.conf
+sudo cp /opt/odoo/install_files/odoo-server.conf /etc/
 sudo chown odoo: /etc/odoo-server.conf
 sudo chmod 640 /etc/odoo-server.conf
 
 sudo mkdir /var/log/odoo
 sudo chown -R odoo:root /var/log/odoo
-cd /etc/init.d/
-sudo wget https://raw.githubusercontent.com/odoo/odoo/8.0/debian/init -O odoo-server
-sudo chmod 755 /etc/init.d/odoo-server #Permissao para executar arquivo
-sudo chown root: /etc/init.d/odoo-server #Usurio root como proprietrio do arquivo
+sudo cp /opt/odoo/install_files/odoo-server /etc/init.d/
+sudo chmod 755 /etc/init.d/odoo-server
+sudo chown root: /etc/init.d/odoo-server
 
+echo "............    downloading Odoo 8.0 & Project Management Information System    ............"
 
-echo "............    downloading Project Management Information System & OCA Brazilian localization files ............"
 
 sudo su - odoo -s /bin/bash
+git clone https://www.github.com/odoo/odoo --depth 1 --branch 8.0 --single-branch .
 
 mkdir /opt/odoo/modules
 cd /opt/odoo/modules
-# git clone https://github.com/projectexpert/pmis.git
-git clone --recursive https://github.com/projectexpert/FULLPMIS.git
+git clone --recursive https://github.com/projectexpert/pmis.git
+# git clone --recursive https://github.com/projectexpert/FULLPMIS.git
 
 mkdir /opt/odoo/modules/oca
 cd /opt/odoo/modules/oca
