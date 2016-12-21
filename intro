@@ -1,6 +1,3 @@
 sudo apt-get install nano git bash-completion -y
-sudo adduser --system --home=/opt/odoo --group odoo
-mkdir /opt/odoo/install_files
-cd /opt/odoo/install_files
-git clone https://github.com/malabrito/odoo-with-PMIS.git .
-sudo chmod 755 /opt/odoo/install_files/step1.sh
+git clone https://github.com/malabrito/odoo-with-PMIS.git
+sudo chmod 755 ~/odoo-with-PMIS/step1.sh
