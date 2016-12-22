@@ -1,7 +1,7 @@
 sudo apt-get install nano git bash-completion -y
 
-git clone https://github.com/malabrito/odoo-with-PMIS.git
+git clone https://github.com/malabrito/odoo.git
 
-sudo chmod 755 ~/odoo-with-PMIS/step1.sh
+sudo chmod 755 ~/odoo/step1.sh
 
-./odoo-with-PMIS/step1.sh
+./odoo/step1.sh
